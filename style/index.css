@@ -19,7 +19,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
     /* outline: 1px solid red; */
@@ -32,21 +31,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 a{
     display:flex;
     justify-content: center;
@@ -55,16 +39,24 @@ a{
     background-color: steelblue;
     color:white;
     text-decoration: none;
-    border:2px solid black;   
+    border:2px solid black;
+    font-size: 2rem;   
 }
 html{
     font-family: righteous;
+    font-size:62.5%;
+}
+h1{
+    font-size: 3rem;
+}
+p{
+    font-size:2rem;
 }
 header{
     display:flex;
-    /* background-color: grey; */
     font-size:3rem;
-    justify-content:center;    
+    justify-content:center; 
+    padding: 1%;   
 }
 .quote{
     display:flex;
@@ -77,13 +69,7 @@ header{
     flex-wrap:wrap;
     /* background-color: blue; */
     font-size:2rem;
-}
-.spacer{
-    width:10%;
-}
-.text1{
-    font-size:1rem;
-    width:90%
+    margin-left:2%;
 }
 .linkbar{
     display:flex;
@@ -104,6 +90,7 @@ header{
 }
 .big-left{
     max-width:100%;
+    margin-left: 5%;
 }
 .body-right{'
     display:flex;
@@ -111,19 +98,17 @@ header{
     display:flex;
     flex-flow:column wrap;
     padding:3%;
+    margin-left:10%;
 }
 .body-name{
-    font-size:3rem;
     width:100%;
     margin-bottom:3%;
 }
 .about{
-    font-size:1.2rem;
     width:60%;   
 }
 .aboutme{
     width:35%;
-    font-size:3rem;
     margin-bottom:3%;
 }
 .alleight{
@@ -149,7 +134,6 @@ header{
     justify-content: space-between;
 }
 .centertxt p{
-    font-size:1.4rem;
     text-align: center;
     width:20%;
 }
@@ -172,14 +156,12 @@ header{
     justify-content: space-between;
 }
 .bottomtxt p{
-    font-size:1.4rem;
     text-align: center;
     width:20%;
 }
 .footerblock{
     display:flex;
     flex-direction:column;
-    /* background-color: blue; */
     position:relative;
     align-items: center;
     bottom:0;
@@ -187,11 +169,18 @@ header{
     height:5%;
 }
 .contact{
-    font-size:3rem;
     margin:1%;
 }
 .contactme{
     width:25%;
-    font-size:3rem;
     margin-bottom:2%;
 }
+.footerblock{
+    background-color: lightgrey;
+    width: 100%;
+}
+@media(max-width:800px)
+
+
+
+@media(max-width:500px)
