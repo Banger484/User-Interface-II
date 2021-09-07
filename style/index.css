@@ -21,7 +21,7 @@ time, mark, audio, video {
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -40,7 +40,8 @@ a{
     color:white;
     text-decoration: none;
     border:2px solid black;
-    font-size: 2rem;   
+    font-size: 2rem;
+    margin-bottom: 1%;
 }
 html{
     font-family: righteous;
@@ -56,18 +57,16 @@ header{
     display:flex;
     font-size:3rem;
     justify-content:center; 
-    padding: 1%;   
+    margin:1% 0;
 }
-.quote{
+.name{
     display:flex;
     width:100%;
     padding-bottom:1%;
 }
 .top-links{
     display:flex;
-    padding:1%;
     flex-wrap:wrap;
-    /* background-color: blue; */
     font-size:2rem;
     margin-left:2%;
 }
@@ -78,38 +77,34 @@ header{
 .top-links a{
     display:flex;
     justify-content:center;
-    width:12%;
+    width:10%;
 }
 .body-top{
     display:flex;
-    padding: 1.5%;
+    width: 100%;
 }
 .body-left{
-    max-width:30%;
-
+    width:50%;
 }
 .big-left{
-    max-width:100%;
-    margin-left: 5%;
+    width:80%;
+    margin-left:4%;
 }
 .body-right{'
     display:flex;
-    width:70%;
-    display:flex;
-    flex-flow:column wrap;
-    padding:3%;
-    margin-left:10%;
+    width:50%;
 }
 .body-name{
     width:100%;
     margin-bottom:3%;
 }
-.about{
-    width:60%;   
-}
 .aboutme{
-    width:35%;
     margin-bottom:3%;
+    padding:1%;
+    width: 20%;
+}
+.par-about{
+    width: 60%;
 }
 .alleight{
     width:20%;
@@ -179,8 +174,49 @@ header{
     background-color: lightgrey;
     width: 100%;
 }
-@media(max-width:800px)
+@media(max-width:800px){
+.big-left{
+    margin:0;
+}
+.body-top{
+    margin:0;
+    padding: 0;
+}
+.body-right p{
+    width: 80%;
+    font-size:1.5rem;
+    padding: 0;
+    margin:0;
+}
+.top-links a{
+    width: 12%;
+}
+.aboutme{
+    width:25%;
+}
 
 
+@media(max-width:500px){
+header{
+        display: none;
+}
+.top-links{
+    margin-left:0;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.linkbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1%;
+}
+.linkbar a{
+    width: 25%;
+}
 
-@media(max-width:500px)
+}
